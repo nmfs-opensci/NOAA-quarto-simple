@@ -1,0 +1,21 @@
+---
+title: Rendering
+---
+
+The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the `gh-pages` branch.
+
+But when you are developing your content, you will want to render it locally. 
+
+## Step 1. Make sure you have a recent RStudio
+
+Have you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto.
+
+## Step 2. Clone and create RStudio project
+
+First, clone the repo onto your local computer. How? You can click File > New Project and then select "Version Control". Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up.
+
+## Step 3. Render within RStudio
+
+RStudio will recognize that this is a Quarto project by the precense of the `_quarto.yml` file and will see the "Build" tab.  Click the "Render website" button to render to the `docs` folder.
+
+**Previewing:** You can either click `index.html` in the `docs` folder and specify "preview in browser" or set up RStudio to preview to the viewer panel. To do the latter, go to Tools > Global Options > R Markdown. Then select "Show output preview in: Viewer panel". 

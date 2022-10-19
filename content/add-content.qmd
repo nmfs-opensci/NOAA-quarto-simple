@@ -1,0 +1,25 @@
+---
+title: Customize
+---
+
+## Edit and add your pages
+
+Edit the qmd or md files in the `content` folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).
+
+Each page should start with 
+```
+---
+title: your title
+---
+```
+and the first header will be the 2nd level, so `## `. Note, there are situations where you leave off
+```
+---
+title: your title
+---
+```
+and start the qmd file with a level header `# `, but if using the default title yaml (in the `---` fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation).
+
+## Add your pages the project
+
+* Add the files to `_quarto.yml`

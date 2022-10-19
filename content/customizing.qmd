@@ -1,0 +1,17 @@
+---
+title: Customization
+---
+
+## Quarto documentation
+
+Quarto allow many bells and whistles to make nice output. Read the documentation here [Quarto documentation](https://quarto.org/docs/guide/).
+
+## Examples
+
+Looking at other people's Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.
+
+* [Quarto gallery](https://quarto.org/docs/gallery/)
+* [nmfs-openscapes](https://nmfs-openscapes.github.io/)
+* [Faye lab manual](https://thefaylab.github.io/lab-manual/)
+* [quarto-titlepages](https://nmfs-opensci.github.io/quarto_titlepages/) Note the link to edit is broken. Go to repo and look in `documentation` directory.
+
