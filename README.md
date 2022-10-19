@@ -1,4 +1,6 @@
-# NOAA simple This is a template for a simple Quarto website that looks like a "book". This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files.
+# NOAA simple 
+
+This is a template for a simple Quarto website that looks like a "book". This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files.
 
 `gh-pages` branch. Serving the website files from this branch is a common what to keep all the website files from cluttering your main branch. 
 
