@@ -4,9 +4,9 @@ project:
 
 website: 
   page-navigation: true
-  title: "quarto titlepages" 
-  site-url: "https://nmfs-opensci.github.io/quarto_titlepages" 
-  repo-url: "https://github.com/nmfs-opensci/quarto_titlepages"
+  title: "NOAA quarto simple" 
+  site-url: "https://nmfs-opensci.github.io/NOAA-quarto-simple" 
+  repo-url: "https://github.com/nmfs-opensci/NOAA-quarto-simple"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
@@ -34,19 +34,17 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: 01-how-to-use-extension.qmd
-        text: How to use
-      - href: 03-titlepage-themes.qmd
-        text: Title page themes
-      - href: 02-titlepages.qmd
-        text: titlepage-theme options
-      - href: 05-coverpage-themes.qmd
-        text: Cover page themes
-      - href: 04-coverpages.qmd
-        text: coverpage-theme options
-      - href: 06-static-files.qmd
-        text: Adding static files
-      - href: 08-acknowledgements.qmd
+      - href: content/add-content.qmd
+        text: Add content
+      - href: content/customizing.qmd
+        text: Customizing
+      - href: content/rendering.qmd
+        text: Rendering
+      - href: content/rmarkdown.Rmd
+        text: R Markdown files
+      - href: content/code.qmd
+        text: Code in your files
+      - href: content/acknowledgements.qmd
         text: Acknowledgements
 
 format:
