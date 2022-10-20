@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/Open%20In-RStudio%20Cloud-green)](https://rstudio.cloud/content/4771757) Try without installing anything. Make sure to make click the Make a Copy button or you will lose all your changes.
+[![](https://img.shields.io/badge/Open%20In-RStudio%20Cloud-green)](https://rstudio.cloud/content/4771757) *Try without installing anything. Make sure to make click the Make a Copy button or you will lose all your changes.*
  
 # NOAA quarto simple website
 
