@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "NOAA quarto simple",
     "section": "",
-    "text": "This is a template for a simple Quarto website that looks like a “book”. This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to theme.scss.\ngh-pages branch. Serving the website files from this branch is a common what to keep all the website files from cluttering your main branch."
+    "text": "This is a template for a simple Quarto website that looks like a “book”. This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to theme.scss. The webpage will be on the gh-pages branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch."
   },
   {
     "objectID": "index.html#github-set-up",
