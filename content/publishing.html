@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NOAA quarto simple - Rendering</title>
+<title>NOAA quarto simple - Publishing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/rmarkdown.html" rel="next">
-<link href="../content/customizing.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -72,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Rendering</h1>
+      <h1 class="quarto-secondary-nav-title">Publishing</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -117,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/rendering.html" class="sidebar-item-text sidebar-link active">Rendering</a>
+  <a href="../content/rendering.html" class="sidebar-item-text sidebar-link">Rendering</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -144,18 +142,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1.-make-sure-you-have-a-recent-rstudio" id="toc-step-1.-make-sure-you-have-a-recent-rstudio" class="nav-link active" data-scroll-target="#step-1.-make-sure-you-have-a-recent-rstudio">Step 1. Make sure you have a recent RStudio</a></li>
-  <li><a href="#step-2.-clone-and-create-rstudio-project" id="toc-step-2.-clone-and-create-rstudio-project" class="nav-link" data-scroll-target="#step-2.-clone-and-create-rstudio-project">Step 2. Clone and create RStudio project</a></li>
-  <li><a href="#step-3.-render-within-rstudio" id="toc-step-3.-render-within-rstudio" class="nav-link" data-scroll-target="#step-3.-render-within-rstudio">Step 3. Render within RStudio</a></li>
+  <li><a href="#turn-on-github-pages-for-your-repo" id="toc-turn-on-github-pages-for-your-repo" class="nav-link active" data-scroll-target="#turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</a></li>
+  <li><a href="#do-your-first-publish-to-gh-pages" id="toc-do-your-first-publish-to-gh-pages" class="nav-link" data-scroll-target="#do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></a></li>
+  <li><a href="#dont-like-using-gh-pages" id="toc-dont-like-using-gh-pages" class="nav-link" data-scroll-target="#dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nmfs-opensci/NOAA-quarto-simple/edit/main/content/rendering.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nmfs-opensci/NOAA-quarto-simple/blob/main/content/rendering.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/nmfs-opensci/NOAA-quarto-simple/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nmfs-opensci/NOAA-quarto-simple/edit/main/content/publishing.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nmfs-opensci/NOAA-quarto-simple/blob/main/content/publishing.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/nmfs-opensci/NOAA-quarto-simple/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Rendering</h1>
+<h1 class="title d-none d-lg-block">Publishing</h1>
 </div>
 
 
@@ -169,20 +167,52 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the <code>gh-pages</code> branch.</p>
-<p>But when you are developing your content, you will want to render it locally.</p>
-<section id="step-1.-make-sure-you-have-a-recent-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="step-1.-make-sure-you-have-a-recent-rstudio">Step 1. Make sure you have a recent RStudio</h2>
-<p>Have you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto.</p>
+<p>To get your Quarto webpage to show up with the url</p>
+<pre><code>yourname.github.io/yourrepo</code></pre>
+<p>you have a few steps.</p>
+<section id="turn-on-github-pages-for-your-repo" class="level2">
+<h2 class="anchored" data-anchor-id="turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</h2>
+<ul>
+<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.</li>
+<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
+</ul>
+<p>The GitHub Action will automatically recreate your website when you push to GitHub <strong>after</strong> you do the initial <code>gh-pages</code> set-up</p>
 </section>
-<section id="step-2.-clone-and-create-rstudio-project" class="level2">
-<h2 class="anchored" data-anchor-id="step-2.-clone-and-create-rstudio-project">Step 2. Clone and create RStudio project</h2>
-<p>First, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up.</p>
+<section id="do-your-first-publish-to-gh-pages" class="level2">
+<h2 class="anchored" data-anchor-id="do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></h2>
+<p>The first time you publish to <code>gh-pages</code>, you need to do so locally.</p>
+<ul>
+<li>On your local computer, open a terminal window and <code>cd</code> to your repo directory. Here is what that <code>cd</code> command looks like for me. You command will look different because your local repo will be somewhere else on your computer.</li>
+</ul>
+<pre><code>cd ~/Documents/GitHub/NOAA-quarto-simple</code></pre>
+<ul>
+<li>Publish to the <code>gh-pages</code>. In the terminal type</li>
+</ul>
+<pre><code>quarto publish gh-pages</code></pre>
+<p>This is going to render your webpage and then push the <code>_site</code> contents to the <code>gh-pages</code> branch.</p>
 </section>
-<section id="step-3.-render-within-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="step-3.-render-within-rstudio">Step 3. Render within RStudio</h2>
-<p>RStudio will recognize that this is a Quarto project by the presence of the <code>_quarto.yml</code> file and will see the “Build” tab. Click the “Render website” button to render to the <code>_site</code> folder.</p>
-<p><strong>Previewing:</strong> You can either click <code>index.html</code> in the <code>_site</code> folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”.</p>
+<section id="dont-like-using-gh-pages" class="level2">
+<h2 class="anchored" data-anchor-id="dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</h2>
+<p>In some cases, you don’t want your website on the <code>gh-pages</code> branch. For example, if you are creating releases and you want the website pages in that release, then you won’t want your website pages on the <code>gh-pages</code> branch.</p>
+<p>Here are the changes you need to make if you to avoid <code>gh-pages</code> branch.</p>
+<ul>
+<li>At the top of <code>_quarto.yml</code> add the following:</li>
+</ul>
+<pre><code>project: 
+  type: website
+  output-dir: docs</code></pre>
+<ul>
+<li>On GitHub under Settings &gt; Pages set pages to be made from the <code>main</code> branch and the docs directory.</li>
+<li>Make sure <code>docs</code> is not listed in <code>.gitignore</code></li>
+<li>Publish the site the first time locally using <code>quarto publish</code> from the terminal</li>
+<li>Update the GitHub Action by changing the target branch from <code>gh-pages</code> to <code>main</code></li>
+</ul>
+<pre><code>      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions</code></pre>
 
 
 </section>
@@ -399,18 +429,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../content/customizing.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Customizing</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../content/rmarkdown.html" class="pagination-link">
-        <span class="nav-page-text">R Markdown files</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
