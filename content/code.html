@@ -248,13 +248,15 @@ Coefficients:
 </div>
 <section id="modify-the-github-action" class="level2">
 <h2 class="anchored" data-anchor-id="modify-the-github-action">Modify the GitHub Action</h2>
-<p>You will need to change the GitHub Action in <code>.github/workflows</code> to install these and any needed packages in order for GitHub to be able to render your webpage. The section of the GitHub Action that does this has been commented out, so uncomment it.</p>
+<p>You will need to change the GitHub Action in <code>.github/workflows</code> to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in <code>code.qmd</code>. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.</p>
 <p>If getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the <code>gh-pages</code> branch. If you do this, make sure to delete or rename the GitHub Action to something like</p>
 <pre><code>render-and-publish.old_yml</code></pre>
 <p>so GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.</p>
 </section>
 <section id="render-locally-and-publish-to-gh-pages-branch" class="level2">
 <h2 class="anchored" data-anchor-id="render-locally-and-publish-to-gh-pages-branch">Render locally and publish to gh-pages branch</h2>
+<p>To render locally and push up to the <code>gh-pages</code> branch, open a terminal window and then <code>cd</code> to the directory with the Quarto project. Type this in the terminal:</p>
+<pre><code>quarto render gh-pages</code></pre>
 
 
 </section>
