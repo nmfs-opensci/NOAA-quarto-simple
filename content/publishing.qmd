@@ -32,7 +32,7 @@ This is going to render your webpage and then push the `_site` contents to the `
 
 ## Don't like using `gh-pages`?
 
-In some cases, you don't want your website on the `gh-pages` branch. For example, if you are creating releases and you want the website pages in that release, then you won't want your website pages on the `gh-pages` branch.
+In some cases, you don't want your website on the `gh-pages` branch. For example, if you are creating releases and you want the website pages archived in that release, then you won't want your website pages on the `gh-pages` branch.
 
 Here are the changes you need to make if you to avoid `gh-pages` branch.
 
