@@ -15,8 +15,7 @@ This is a template for [a simple Quarto website](https://nmfs-opensci.github.io/
 * Turn on GitHub Actions under Settings > Actions > General
 <img width="719" alt="image" src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png">
 
-* Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the  Settings > Pages page to find the url.
-Quarto website
+* Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the  Settings > Pages page to find the url to the Quarto website
 
 ## Customize
 
