@@ -11,6 +11,6 @@ This is a template for a simple Quarto website that looks like a "book". This is
 ## GitHub Set-up
 
 * Click the green "use template" button to make a repository with this content.
-* Turn on GitHub Pages under Settings > Pages . You will set pages to be made from the gh-pages branch and the docs directory.
+* Turn on GitHub Pages under Settings > Pages . You will set pages to be made from the gh-pages branch and the root directory.
 * Turn on GitHub Actions under Settings > Actions > General
 * Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the  Settings > Pages page to find the url.
