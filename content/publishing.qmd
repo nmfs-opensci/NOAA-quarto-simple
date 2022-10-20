@@ -45,12 +45,50 @@ project:
 * On GitHub under Settings > Pages set pages to be made from the `main` branch and the docs directory.
 * Make sure `docs` is not listed in `.gitignore`
 * Publish the site the first time locally using `quarto publish` from the terminal
-* Update the GitHub Action by changing the target branch from `gh-pages` to `main`
+* Change the GitHub Action because you can't use `quarto publish gh-pages`. You'll need to push to the main branch yourself (in the GitHub Action)
 ```
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
+on:
+  push:
+    branches: main
+
+name: Render and Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2 
+        
+      - name: Set up R (needed for Rmd)
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install packages (needed for Rmd)
+        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite"))'
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
         with:
-          target: main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+          # To install LaTeX to build PDF book 
+          # tinytex: true 
+          # uncomment below and fill to pin a version
+          # version: 0.9.600
+      
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+
+      - name: Set up Git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: Commit all changes and push
+        run: |
+          git add -A && git commit -m 'Build site' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
 ```
