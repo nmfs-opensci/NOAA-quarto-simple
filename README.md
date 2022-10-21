@@ -1,6 +1,6 @@
 [![](https://img.shields.io/badge/Open%20In-RStudio%20Cloud-green)](https://rstudio.cloud/content/4771757) *Try without installing anything. Make sure to click the Make a Copy button or you will lose all your changes.*
  
-# NOAA quarto simple website with R
+# NOAA quarto simple website with R in qmd or Rmd files
 
 This is a template for [a simple Quarto website](https://nmfs-opensci.github.io/NOAA-quarto-simple/) that looks like a "book". This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The webpage will use the `gh-pages` branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch. 
 
