@@ -1,10 +1,10 @@
 [![](https://img.shields.io/badge/Open%20In-RStudio%20Cloud-green)](https://rstudio.cloud/content/4771757) *Try without installing anything. Make sure to click the Make a Copy button or you will lose all your changes.*
  
-# NOAA quarto simple website
+# NOAA quarto simple website with R
 
 This is a template for [a simple Quarto website](https://nmfs-opensci.github.io/NOAA-quarto-simple/) that looks like a "book". This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The webpage will use the `gh-pages` branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch. 
 
-*Note: The GitHub Action installs R so you can render qmd files with R code. Edit to install Python or Julia if your qmd uses those instead. If you have substantial computations, you don't want to be re-running all the computations for files that didn't change. Read about the [freeze option](https://quarto.org/docs/publishing/ci.html) for this situation. R users with complex reports with dependencies (so qmd B depends on qmd A or data file A) should be aware of the {targets} package which will help you keep track of files that need to be re-rendered due to changes in dependencies.*
+*Note: The GitHub Action installs R so you can render qmd files with R code. You will need to edit to install Python or Julia if your qmd uses those instead. If you have substantial computations, you don't want to be re-running all the computations for files that didn't change. Read about the [freeze option](https://quarto.org/docs/publishing/ci.html) for this situation. R users with complex reports with dependencies (so qmd B depends on qmd A or data file A) should be aware of the {targets} package which will help you keep track of files that need to be re-rendered due to changes in dependencies.*
 
 ## GitHub Set-up
 
