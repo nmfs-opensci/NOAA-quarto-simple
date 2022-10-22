@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "NOAA quarto simple with Python",
     "section": "",
-    "text": "This is a template for a simple Quarto website that looks like a “book”. This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to theme.scss. The webpage will be on the gh-pages branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch.\nThis Quarto website has Python code in the code.qmd file and has a Jupyter notebook. The GitHub Action will render those for you but note that you need some a special RAW block at the top of your ipynb file. Without this, the Jupyter notebook won’t render (code blocks won’t be computed). It looks like this\nAlso you will need to add any modules that your code needs to the requirements.txt file so they are installed by the GitHub Action."
+    "text": "This is a template for a simple Quarto website that looks like a “book”. This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to theme.scss. The webpage will be on the gh-pages branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch.\nThe GitHub Action installs R so you can have R code in your qmd or Rmd files. Note, you do not need to make changes to your Rmd files unless your need Quarto features like cross-references."
   },
   {
     "objectID": "index.html#github-set-up",
