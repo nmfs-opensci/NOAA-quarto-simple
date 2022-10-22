@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NOAA quarto simple</title>
+<title>NOAA quarto simple - NOAA quarto simple with Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">NOAA quarto simple</h1>
+      <h1 class="quarto-secondary-nav-title">NOAA quarto simple with Python</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">NOAA quarto simple</h1>
+<h1 class="title d-none d-lg-block">NOAA quarto simple with Python</h1>
 <p class="subtitle lead">A simple Quarto webpage with a book layout</p>
 </div>
 
@@ -168,6 +168,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>This is a template for a simple Quarto website that looks like a “book”. This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to <code>theme.scss</code>. The webpage will be on the <code>gh-pages</code> branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch.</p>
+<p>This Quarto website has Python code in the <code>code.qmd</code> file and has a Jupyter notebook. The GitHub Action will render those for you but note that you need some a special <strong>RAW</strong> block at the top of your ipynb file. Without this, the Jupyter notebook won’t render (code blocks won’t be computed). It looks like this</p>
+<pre><code>---
+title: Jupyter Notebook
+execute:
+  enabled: true
+jupyter: python3
+---</code></pre>
+<p>Also you will need to add any modules that your code needs to the <code>requirements.txt</code> file so they are installed by the GitHub Action.</p>
 <section id="github-set-up" class="level2">
 <h2 class="anchored" data-anchor-id="github-set-up">GitHub Set-up</h2>
 <ul>
