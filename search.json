@@ -2,14 +2,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "NOAA quarto simple with Python",
+    "title": "NOAA quarto simple with R",
     "section": "",
     "text": "This is a template for a simple Quarto website that looks like a “book”. This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to theme.scss. The webpage will be on the gh-pages branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch.\nThe GitHub Action installs R so you can have R code in your qmd or Rmd files. Note, you do not need to make changes to your Rmd files unless your need Quarto features like cross-references."
   },
   {
     "objectID": "index.html#github-set-up",
     "href": "index.html#github-set-up",
-    "title": "NOAA quarto simple with Python",
+    "title": "NOAA quarto simple with R",
     "section": "GitHub Set-up",
     "text": "GitHub Set-up\n\nClick the green “use template” button to make a repository with this content. Make sure to make your repo public (since GitHub Pages doesn’t work on private repos unless you have a paid account) and check box to include all the branches (so that you get the gh-pages branch). \nTurn on GitHub Pages under Settings > Pages . You will set pages to be made from the gh-pages branch and root directory. \nTurn on GitHub Actions under Settings > Actions > General \nEdit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the Settings > Pages page to find the url."
   },
