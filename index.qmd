@@ -1,5 +1,5 @@
 ---
-title: "NOAA quarto simple with Python"
+title: "NOAA quarto simple with R"
 subtitle: "A simple Quarto webpage with a book layout"
 page-layout: full
 ---
