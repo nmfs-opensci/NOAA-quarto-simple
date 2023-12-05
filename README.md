@@ -6,7 +6,7 @@ This is a template for [a simple Quarto website](https://nmfs-opensci.github.io/
 
 The repo includes a GitHub Action that will build the website automatically when you make changes to the files. The webpage will use the `gh-pages` branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch. 
 
-**Warning:** Check that the settings will allow the GitHub Action to run. See the instructions below under "GitHub Set-up".
+**Warning:** Check that the settings will allow the GitHub Action to run. See the instructions below under "GitHub Set-up". Scroll down to the troubleshooting section if the website is not built by the GitHub Action.
 
 **Note:** The GitHub Action installs R so you can render qmd files with R code. You will need to edit to install Python or Julia if your qmd uses those instead. If you have substantial computations, you don't want to be re-running all the computations for files that didn't change. Read about the [freeze option](https://quarto.org/docs/publishing/ci.html) for this situation. R users with complex reports with dependencies (so qmd B depends on qmd A or data file A) should be aware of the {targets} package which will help you keep track of files that need to be re-rendered due to changes in dependencies.
 
@@ -30,6 +30,16 @@ The repo includes a GitHub Action that will build the website automatically when
 
 * Edit the qmd or md files in the `content` folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).
 * Add the files to `_quarto.yml`
+
+## Troubleshooting builds
+
+The most common trouble users run into is that the book is not rendering. Check the following:
+
+* The `gh-pages` branch does not exist. If you forgot to check the check box to include all the branches when you created the repo from the template then it won't exist. The Action will fail if the gh-pages branch does not already exist. You can create the branch and then push a change to main to trigger the Action to run again.
+* The GitHub Pages has not been set. You need to go to Pages under settings, and set Pages to build from the `gh-pages` branch.
+* You did not allow GitHub Actions to run and/or did not give read/write permission. Go to Settings > Actions > General, and make sure Actions are allowed (top section) and they have read/write permission (bottom section).
+* You did not push a change to the main branch. The Action is triggered by a push to main, so try making an edit to README.md and pushing that change.
+
 
 <hr>
 
