@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/publishing.html</loc>
+    <lastmod>2023-12-06T00:05:09.235Z</lastmod>
+  </url>
+  <url>
     <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/rmarkdown.html</loc>
-    <lastmod>2023-05-24T22:16:59.066Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/rendering.html</loc>
-    <lastmod>2023-05-24T22:17:01.242Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/add-content.html</loc>
-    <lastmod>2023-05-24T22:17:01.585Z</lastmod>
+    <lastmod>2023-12-06T00:05:08.635Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/customizing.html</loc>
-    <lastmod>2023-05-24T22:17:01.921Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/publishing.html</loc>
-    <lastmod>2023-05-24T22:17:02.313Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/acknowledgements.html</loc>
-    <lastmod>2023-05-24T22:17:02.649Z</lastmod>
+    <lastmod>2023-12-06T00:05:07.111Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/code.html</loc>
-    <lastmod>2023-05-24T22:17:03.737Z</lastmod>
+    <lastmod>2023-12-06T00:05:06.555Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/index.html</loc>
-    <lastmod>2023-05-24T22:17:04.093Z</lastmod>
+    <lastmod>2023-12-06T00:05:05.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/add-content.html</loc>
+    <lastmod>2023-12-06T00:05:06.839Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/rendering.html</loc>
+    <lastmod>2023-12-06T00:05:07.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/acknowledgements.html</loc>
+    <lastmod>2023-12-06T00:05:08.903Z</lastmod>
   </url>
 </urlset>
