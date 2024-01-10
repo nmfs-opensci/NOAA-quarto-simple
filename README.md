@@ -40,7 +40,6 @@ The most common trouble users run into is that the book is not rendering. Check 
 * You did not allow GitHub Actions to run and/or did not give read/write permission. Go to Settings > Actions > General, and make sure Actions are allowed (top section) and they have read/write permission (bottom section).
 * You did not push a change to the main branch. The Action is triggered by a push to main, so try making an edit to README.md and pushing that change.
 
-
 <hr>
 
 ### Disclaimer
@@ -51,3 +50,4 @@ This repository is a scientific product and is not official communication of the
 
 This content was created by U.S. Government employees as part of their official duties. This content is not subject to copyright in the United States (17 U.S.C. §105) and is in the public domain within the United States of America. Additionally, copyright is waived worldwide through the CC0 1.0 Universal public domain dedication.
 
+<hr>
