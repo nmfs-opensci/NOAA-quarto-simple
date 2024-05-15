@@ -12,6 +12,6 @@ Looking at other people's Quarto code is a great way to figure out how to do stu
 
 * [Quarto gallery](https://quarto.org/docs/gallery/)
 * [nmfs-openscapes](https://nmfs-openscapes.github.io/)
-* [Faye lab manual](https://thefaylab.github.io/lab-manual/)
+* [Fay lab manual](https://thefaylab.github.io/lab-manual/)
 * [quarto-titlepages](https://nmfs-opensci.github.io/quarto_titlepages/) Note the link to edit is broken. Go to repo and look in `documentation` directory.
 
