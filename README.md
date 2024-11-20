@@ -8,7 +8,7 @@ The repo includes a GitHub Action that will build the website automatically when
 
 **Warning:** Check that the settings will allow the GitHub Action to run. See the instructions below under "GitHub Set-up". Scroll down to the troubleshooting section if the website is not built by the GitHub Action.
 
-**Note:** The GitHub Action installs R so you can render qmd files with R code. You will need to edit to install Python or Julia if your qmd uses those instead. If you have substantial computations, you don't want to be re-running all the computations for files that didn't change. Read about the [freeze option](https://quarto.org/docs/publishing/ci.html) for this situation. R users with complex reports with dependencies (so qmd B depends on qmd A or data file A) should be aware of the {targets} package which will help you keep track of files that need to be re-rendered due to changes in dependencies.
+**Note:** The GitHub Action installs R so you can render qmd files with R code. You will need to edit to install Python or Julia if your qmd uses those instead. If you have substantial computations, you don't want to be re-running all the computations for files that didn't change. Read about the [freeze option](https://quarto.org/docs/publishing/ci.html) for this situation. R users with complex reports with dependencies should be aware of the {targets} package which will help you keep track of files that need to be re-rendered due to changes in dependencies.
 
 ## GitHub Set-up
 
